@@ -102,5 +102,152 @@ function Kin(day, month, year){
         13: "Cosmic",
       }[tone];
     }
+    this.creativePower = function(tone){
+      return {
+        1: "Unify",
+        2: "Polarize",
+        3: "Activate",
+        4: "Define",
+        5: "Empower",
+        6: "Organize",
+        7: "Channel",
+        8: "Harmonize",
+        9: "Pulse",
+        10: "Perfect",
+        11: "Dissolve",
+        12: "Dedicate",
+        13: "Endure",
+      }[tone];
+    }
+    this.action = function(tone){
+      return {
+        1: "Attracting",
+        2: "Stabilizing",
+        3: "Bonding",
+        4: "Measuring",
+        5: "Commanding",
+        6: "Balancing",
+        7: "Inspiring",
+        8: "Modeling",
+        9: "Realizing",
+        10: "Producing",
+        11: "Releasing",
+        12: "Universalizing",
+        13: "Transcending",
+      }[tone];
+    }
+    this.function = function(tone){
+      return {
+        1: "Purpose",
+        2: "Challenge",
+        3: "Service",
+        4: "Form",
+        5: "Radiance",
+        6: "Equality",
+        7: "Attunement",
+        8: "Integrity",
+        9: "Intention",
+        10: "Manifestation",
+        11: "Liberation",
+        12: "Cooperation",
+        13: "Presence",
+      }[tone];
+    }
+    this.b = function(seal){
+      return {
+        1: "Nurture",
+        2: "Communicate",
+        3: "Dream",
+        4: "Target",
+        5: "Survive",
+        6: "Equalize",
+        7: "Know",
+        8: "Beautify",
+        9: "Purify",
+        10: "Love",
+        11: "Play",
+        12: "Influence",
+        13: "Explore",
+        14: "Enchant",
+        15: "Create",
+        16: "Question",
+        17: "Evolve",
+        18: "Reflect",
+        19: "Catalyze",
+        20: "Enlighten",
+      }[seal];
+    }
+    this.d = function(seal){
+      return {
+        1: "Being",
+        2: "Breath",
+        3: "Intuition",
+        4: "Awareness",
+        5: "Instinct",
+        6: "Opportunity",
+        7: "Healing",
+        8: "Art",
+        9: "Flow",
+        10: "Loyalty",
+        11: "Illusion",
+        12: "Wisdom",
+        13: "Wakefulness",
+        14: "Receptivity",
+        15: "Mind",
+        16: "Fearlessness",
+        17: "Synchronicity",
+        18: "Order",
+        19: "Energy",
+        20: "Life",
+      }[seal];
+    }
+    this.e = function(seal){
+      return {
+        1: "Input",
+        2: "Input",
+        3: "Input",
+        4: "Input",
+        5: "Store",
+        6: "Store",
+        7: "Store",
+        8: "Store",
+        9: "Process",
+        10: "Process",
+        11: "Process",
+        12: "Process",
+        13: "Output",
+        14: "Output",
+        15: "Output",
+        16: "Output",
+        17: "Matrix",
+        18: "Matrix",
+        19: "Matrix",
+        20: "Matrix",
+      }[seal];
+    }
+    this.f = function(seal){
+      return {
+        1: "Birth",
+        2: "Spirit",
+        3: "Abundance",
+        4: "Flowering",
+        5: "Life Force",
+        6: "Death",
+        7: "Accomplishment",
+        8: "Elegance",
+        9: "Universal Water",
+        10: "Heart",
+        11: "Magic",
+        12: "Free Will",
+        13: "Space",
+        14: "Timelessness",
+        15: "Vision",
+        16: "Intelligence",
+        17: "Navigation",
+        18: "Endlessness",
+        19: "Self-Generation",
+        20: "Universal Fire",
+      }[seal];
+    }
     this.calculate(day, month, year);
   }
