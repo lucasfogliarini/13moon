@@ -21,6 +21,22 @@ function Kin(day, month, year){
       this.kin.mantra = this.kin.seal.mantra + ' ' + this.kin.tone.mantra;
       return this.kin;
     }
+    this.generateDescription = function(seal, tone){
+      var a = this.creativePower(tone);
+      var b = this.b(seal);
+      var c = this.action(tone);
+      var d = this.d(seal);
+      var e = this.e(seal);
+      var f = this.f(seal);
+      var g = this.toneMantra(tone);
+      var h = this.function(tone);
+      return [
+        "I " + a + " in order to " + b,
+        c + ' ' + d,
+        'I seal the ' + e + ' of ' + f,
+        'With the ' + g + ' tone of ' + h
+      ];
+    }
     this.mod = function(number, factor){
       var mod = number % factor;
       return mod == 0 ? factor : mod;
